@@ -64,6 +64,48 @@ def exportPDF():
 if __name__ == '__main__':
     app.run('localhost', 8001, debug=True,)
 ```
+# export_pdf.jsx
+```javascript
+function ExportAsPDF(myFile){  
+    try{
+       	app.documents.item(0).exportFile(ExportFormat.pdfType, myFile, app.pdfExportPresets.item("[High Quality Print]"));
+    }catch(e){
+    	alert(e);
+    };  
+}
+function LoadDataIntoTemplate(doc){
+	// using script label to place data into placeholders
+	for (var idx = 0; idx < doc.allPageItems.length; idx++)
+	{
+		var pageItem = doc.allPageItems[idx];
+		// Editorial contents
+		if (pageItem.constructor.name == "TextFrame" && pageItem.label == "placeholder1")
+		{
+		  pageItem.contents = app.scriptArgs.getValue("arg1");
+		}
+		if (pageItem.constructor.name == "TextFrame" && pageItem.label == "placeholder2")
+		{
+		  pageItem.contents = app.scriptArgs.getValue("arg2");
+		}
+		if (pageItem.constructor.name == "TextFrame" && pageItem.label == "placeholder3")
+		{
+		  pageItem.contents = app.scriptArgs.getValue("arg3");
+		}
+	}
+}
+function main(){
+	var myTemplateFile = new File("/c/ServerFiles/template.indt");
+	var myPDFfile = new File("/c/ServerFiles/brochure.pdf");
+	var doc = app.open(myTemplateFile);
+	// get scriptArgs and update
+	LoadDataIntoTemplate(doc);
+	// Export as PDF
+	ExportAsPDF(myPDFfile);
+	doc.close();
+	alert("PDF Exported");
+}
+main();
+```
 
 # Before
 ![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/before.jpg "Before")
