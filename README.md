@@ -70,3 +70,7 @@ if __name__ == '__main__':
 
 # After
 ![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/after.jpg "After")
+
+# InDesign Server Resources
+* [InDesign Server Developer Forum](https://forums.adobe.com/community/indesign/indesign_server_developers)
+* [InDesign Scripting Forum](https://forums.adobe.com/community/indesign/indesign_scripting)
