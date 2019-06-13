@@ -108,7 +108,7 @@ main();
 ```
 
 # Before
-![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/before.jpg "Before")
+![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/before-copy.jpg "Before")
 
 # After
 ![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/after.jpg "After")
