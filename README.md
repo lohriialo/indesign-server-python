@@ -10,8 +10,10 @@ In this example, we'll demonstrate how you can use InDesign Server to publish wi
 # Getting Started
 Adobe InDesign Server is required to run this tutorial. InDesign Server has a 90 day  trial period, which should be enough to run a POC against your development environment.
 
-# Install & start InDesign Server
+# Install
 * Download [here](https://www.adobeprerelease.com/beta/E31BC525-5F97-4E90-8ECD-5209CB404F08)
+
+# Start InDesign Server
 * `indesignserver -port 12345`
 
 For more details, refer InDesign Server getting started guide at `<Install Dir>\Documentation\English\Intro to InDesign CC Server 2019.pdf`
@@ -23,7 +25,7 @@ For more details, refer InDesign Server getting started guide at `<Install Dir>\
 # Example
 ```python
 # Path to JSX script to do the export
-exportScriptPath = os.getcwd() + "\export_pdf.jsx"
+exportScriptPath = "export_pdf.jsx"
 
 # soap client = IDS host client running on a soap port
 client = Client('http://localhost:12345?wsdl')
