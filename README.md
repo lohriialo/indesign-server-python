@@ -2,7 +2,7 @@
 Adobe InDesign Server is a scalable engine that let you programmatically create automated documents where the data is pulled from a variety of databases like a CMS/DAM etc. Use cases of InDesign Server are, generating documents to PDF, SVG, JPEG, EPS, XML etc. InDesign Server is used in a variety of content management workflows, print & publishing solutions.
 
 # InDesign Server with Python
-In this example, we'll demonstrate how you can use InDesign Server to publish with the data being pulled in from a Firbase database.
+In this example, we'll demonstrate how you can use InDesign Server to publish with the data being pulled in from a [Firebase realtime database](https://firebase.google.com/).
 
 #### Architecture #### 
 ![](https://i.imgur.com/w7LuamT.png "InDesign Server Python Publishing Architecture")
@@ -10,7 +10,7 @@ In this example, we'll demonstrate how you can use InDesign Server to publish wi
 # Getting Started
 Adobe InDesign Server is required to run this tutorial. InDesign Server has a 90 day  trial period, which should be enough to run a POC against your development environment.
 
-# Install
+# Install InDesign Server
 * Download [here](https://www.adobeprerelease.com/beta/E31BC525-5F97-4E90-8ECD-5209CB404F08)
 
 # Start InDesign Server
