@@ -96,7 +96,7 @@ main();
 ![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/after.jpg "After")
 
 # How to inspect scripting object properties?
-There's not a straight forward way, you need to read the documentation to understand what properties/attributes are available for a scripting object, or possibly a COM browser. For example, I've extracted the Python scripting object reference for InDesign CC 2018 at [api_reference](https://github.com/lohriialo/indesign-server-python/tree/master/api_reference)
+There's not a straight forward way, you need to read the documentation to understand what properties/attributes are available for a scripting object, or possibly a COM browser. For example, I've extracted the Python scripting object reference for InDesign Server CC 2018 at [api_reference](https://github.com/lohriialo/indesign-server-python/tree/master/api_reference)
 
 # InDesign Server Resources
 * [InDesign Server Developer Forum](https://forums.adobe.com/community/indesign/indesign_server_developers)
