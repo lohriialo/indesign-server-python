@@ -88,6 +88,23 @@ function main(){
 }
 main();
 ```
+# postman soap.ui body xml example
+```
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://ns.adobe.com/InDesign/soap/">
+<soapenv:Body>
+    <soap:RunScript>
+        <runScriptParameters>
+            <scriptLanguage>javascript</scriptLanguage>
+            <scriptFile>C:\Temp\OpenClose.jsx</scriptFile>
+            <scriptArgs>
+            <name>myParameter</name>
+            <value>305</value>
+            </scriptArgs>
+        </runScriptParameters>
+    </soap:RunScript>
+</soapenv:Body>
+</soapenv:Envelope>
+````
 
 # Before
 ![](https://raw.githubusercontent.com/lohriialo/indesign-server-python/master/images/before-copy.jpg "Before")
